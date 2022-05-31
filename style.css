@@ -1,0 +1,52 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1.5fr 1.5fr 1.5fr ;
+    grid-template-areas: 
+        "nav nav nav"
+        "leftsidebar maincontent rightsidebar"
+        "footer footer footer"
+        ;
+        grid:gap 50px;
+}
+
+nav{
+    background-color: #fe815f;
+    grid-area: nav;
+    color: white;
+    text-align: center;
+    line-height: 3cm;
+}
+main{
+    background-color: #8BF10A;
+    grid-area: maincontent;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    line-height: 15cm;
+
+}
+#leftsidebar{
+    background-color: #7fc427;
+    grid-area: leftsidebar;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    line-height: 15cm;
+}
+#rightsidebar{
+    background-color: #7fc427;
+    grid-area: rightsidebar;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    line-height: 15cm;
+}
+footer{
+    background-color: #f57e20;
+    grid-area: footer;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
